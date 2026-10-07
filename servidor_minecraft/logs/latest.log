@@ -1,0 +1,24 @@
+[21:05:11] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-1-24.04.4-Ubuntu; Ubuntu null) on Linux 6.8.0-1064-azure (amd64)
+[21:05:11] [ServerMain/INFO]: [bootstrap] Loading Paper 26.2-121-main@a2a42c5 (2026-08-29T11:32:25Z) for Minecraft 26.2
+[21:05:11] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[21:05:11] [ServerMain/INFO]: [xyz.atrius.waystones.WaystonesLoader] Resolving external dependencies, this could take a bit...
+[21:05:12] [ServerMain/INFO]: [PluginInitializerManager] Initialized 20 plugins
+[21:05:12] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (3):
+ - ByteClans (1.14.5), ServerTrades (1.0.0), Waystones (2.4.0)
+[21:05:12] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (17):
+ - BlockShips (0.0.17), CarryOnPaper (1.0.1), ChestLockLite (1.2.0), DrugsV2 (2.1), Geyser-Spigot (2.11.3-SNAPSHOT), GravesX (2026.4.9.2), Hammer (1.0.0), LuckPerms (5.5.85), PlaceholderAPI (2.12.3), SkinsRestorer (15.12.6), StringDuper (1.0.2), TAB (6.2.0), Timber (1.8.6), ViaBackwards (5.12.0), ViaVersion (5.12.0), floodgate (2.2.5-SNAPSHOT (b141-81b65cc)), yourShikaBackpacks (1.3.2)
+[21:05:16] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[21:05:16] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[21:05:17] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 696.9ms
+[21:05:17] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.DirectoryLock$LockException: /workspaces/Server/servidor_minecraft/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:94) ~[paper-26.2.jar:26.2-121-a2a42c5]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:29) ~[paper-26.2.jar:26.2-121-a2a42c5]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.createLock(LevelStorageSource.java:472) ~[paper-26.2.jar:26.2-121-a2a42c5]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:468) ~[paper-26.2.jar:26.2-121-a2a42c5]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:401) ~[paper-26.2.jar:26.2-121-a2a42c5]
+	at net.minecraft.server.Main.main(Main.java:198) ~[paper-26.2.jar:26.2-121-a2a42c5]
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:25) ~[paper-26.2.jar:26.2-121-a2a42c5]
+	at org.bukkit.craftbukkit.Main.main(Main.java:204) ~[paper-26.2.jar:26.2-121-a2a42c5]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
